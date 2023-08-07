@@ -3,7 +3,7 @@ package utils_test
 import (
 	"testing"
 
-	"shortlinks/utils"
+	"github.com/ArtificialAI/shortlinks/utils"
 )
 
 func TestRandomStringLength(t *testing.T) {

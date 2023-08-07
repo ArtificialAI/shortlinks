@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"testing"
 
-	"shortlinks/api/handlers"
+	"github.com/ArtificialAI/shortlinks/api/handlers"
 )
 
 func TestCreateHashEmptyBody(t *testing.T) {

@@ -5,7 +5,7 @@ import (
 	"net/url"
 	"testing"
 
-	"shortlinks/api/handlers"
+	"github.com/ArtificialAI/shortlinks/api/handlers"
 )
 
 func TestGetLinkNoHash(t *testing.T) {

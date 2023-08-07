@@ -9,8 +9,8 @@ import (
 
 	"github.com/joho/godotenv"
 
-	"shortlinks/api"
-	"shortlinks/db"
+	"github.com/ArtificialAI/shortlinks/api"
+	"github.com/ArtificialAI/shortlinks/db"
 )
 
 func init() {

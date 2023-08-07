@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"shortlinks/db"
+	"github.com/ArtificialAI/shortlinks/db"
 )
 
 func GetLink(r *http.Request) (int, string) {

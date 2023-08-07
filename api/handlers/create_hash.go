@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"shortlinks/db"
-	"shortlinks/utils"
+	"github.com/ArtificialAI/shortlinks/db"
+	"github.com/ArtificialAI/shortlinks/utils"
 )
 
 type body struct {

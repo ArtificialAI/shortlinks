@@ -3,7 +3,7 @@ package api
 import (
 	"net/http"
 
-	"shortlinks/api/handlers"
+	"github.com/ArtificialAI/shortlinks/api/handlers"
 )
 
 func Link(w http.ResponseWriter, r *http.Request) {
