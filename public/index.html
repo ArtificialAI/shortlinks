@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>URL Shortener</title>
+  <link rel="stylesheet" href="/static/styles.css" />
+</head>
+
+<body>
+  <header class="header">
+    <p>URL Shortener</p>
+  </header>
+
+  <main class="main">
+    <!-- Generate Short URL -->
+    <div data-page="generate" class="hidden">
+      <p class="intro">
+        Paste a valid link and click on the button to generate a shorter link that you can share and it will redirect to
+        the original link.
+      </p>
+
+      <input class="input-link" type="text" name="link" data-id="input-link" />
+
+      <p class="error-message opaque" data-id="generate-error-message"></p>
+
+      <button class="btn-primary" data-id="submit-button">Generate</button>
+
+      <p class="no-link-text" data-id="no-link-text">Once the shortened link is generated, it will be displayed here.
+      </p>
+      <p class="show-link hidden" data-id="show-link"></p>
+      <p class="copied-to-clipboard opaque" data-id="copied-to-clipboard">Link copied to clipboard.</p>
+    </div>
+    <!--/Generate Short URL -->
+
+    <!-- Redirect -->
+    <div data-page="redirect" class="hidden">
+      <p class="intro">You are being redirected to</p>
+      <p class="show-link" data-id="show-full-link"></p>
+      <p class="error-message opaque" data-id="redirect-error-message"></p>
+
+      <div class="btn-group">
+        <button class="btn-error" data-id="cancel-button">Cancel</button>
+        <button class="btn-primary" data-id="continue-button">Continue</button>
+      </div>
+    </div>
+    <!--/Redirect -->
+  </main>
+
+ 
+  <script src="/static/app.js"></script>
+</body>
+
+</html>
